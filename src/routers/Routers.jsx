@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes, Navigate } from 'react-router-dom'
-import Home from '../pages/home'
-import About from '../pages/about' 
+import Home from '../pages/Home'
+import About from '../pages/About' 
 import CarList from '../pages/carList'
 import CarIformation from '../pages/carIformation'
 
