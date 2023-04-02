@@ -1,5 +1,6 @@
 // import all images from assets/images directory
 import mainImage from "../figmaImages/cars-img/2019 Corolla.jpg"
+import mainImage1 from "../figmaImages/cars-img/Rav.jpg"
 
 const carData = [
   {
@@ -23,9 +24,9 @@ const carData = [
     brand: "Toyota",
     rating: 112,
     carName: "RAV4",
-    imgUrl: mainImage,/* MAIN IMAGE 2*/
+    imgUrl: mainImage1,/* MAIN IMAGE 2*/
     model: "SUV",
-    price: 50,
+    price: 150,
     seats: "4",
     gps: "GPS Navigation",
     seatType: "Heated seats",

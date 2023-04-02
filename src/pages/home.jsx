@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'reactstrap';
 import CarSearch from '../components/user/carSearch';
 import carData from "../assets/data/carData";
 import CarInfo from "../components/user/CarInfo";
+import Testimonial from './Testimonials';
 
 const Home = () => {
   return (
@@ -48,14 +49,36 @@ const Home = () => {
             {carData.slice(0, 9).map((item) => (
               <CarInfo item={item} key={item.id} />
             ))}
+
+          </Row>
+        </Container>
+      </section>
+      {/*INFORMATIN SECTION NEEDS TO BE ADDED*/}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12" className="mb-4 text-center">
+              <h6 className="section__subtitle">Our clients says</h6>
+              <h2 className="section__title">Testimonials</h2>
+            </Col>
+
+            <Testimonial />
           </Row>
         </Container>
       </section>
     </Header2>
   );
 };
-
+/*NEED TO SHIFT THE BOTTEM FOOTER MENU OVER */
 export default Home
+
+
+
+
+
+
+
+
 /* HOW TO UNDERSTAND ROW, COL  https://react-bootstrap.github.io/layout/breakpoints/
 https://getbootstrap.com/docs/4.0/utilities/flex/
 
