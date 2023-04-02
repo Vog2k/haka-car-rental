@@ -1,0 +1,70 @@
+.bannerImage {
+  max-width: 100%;
+  height: 650px;
+}
+
+.bannerImage01 {
+  background: url("../assets/figmaImages/slider-img/slider-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heroImage {
+  overflow: hidden;
+}
+
+.bannerContent {
+  padding-top: 150px;
+}
+
+.bannerContent h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.bannerButton {
+  background: #3563E9;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  width:130px;
+  height: 35px;
+}
+
+.bannerButton a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffffff;
+  
+}
+
+.bannerButton:hover {
+  background: #28306e;
+  color: #fff;
+}
+
+@media only screen and (max-width: 992px) {
+  .bannerContent {
+    height: 530px;
+    max-width: 100vw;
+  }
+
+  .bannerContent {
+    margin-top: -50px;
+  }
+
+  .bannerContent h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slider__item {
+    height: 450px;
+  }
+
+  .bannerContent h1 {
+    font-size: 1.5rem;
+  }
+}

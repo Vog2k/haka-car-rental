@@ -1,23 +1,32 @@
 // import all images from assets/images directory
-import img01 from "../all-images/cars-img/nissan-offer.png";
-import img02 from "../all-images/cars-img/offer-toyota.png";
-import img03 from "../all-images/cars-img/bmw-offer.png";
-import img04 from "../all-images/cars-img/nissan-offer.png";
-import img05 from "../all-images/cars-img/offer-toyota.png";
-import img06 from "../all-images/cars-img/mercedes-offer.png";
-import img07 from "../all-images/cars-img/toyota-offer-2.png";
-import img08 from "../all-images/cars-img/mercedes-offer.png";
+import mainImage from "../figmaImages/cars-img/2019 Corolla.jpg"
 
 const carData = [
   {
-    id: 1,
-    brand: "Tesla",
+    id:0,
+    brand: "Toyota",
     rating: 112,
-    carName: "Tesla Malibu",
-    imgUrl: img01,/* images of current cars */
-    model: "Model 3",
+    carName: "Corolla",
+    imgUrl: mainImage,/* MAIN IMAGE 1*/
+    fuel:"Petrol 92 unleded",
+    model: "Sedan",
     price: 50,
-    speed: "20kmpl",
+    seats: "4",
+    gps: "GPS Navigation",
+    seatType: "Heated seats",
+    automatic: "Tiptronic",
+    description:
+      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+  },
+  {
+    id:1,
+    brand: "Toyota",
+    rating: 112,
+    carName: "RAV4",
+    imgUrl: mainImage,/* MAIN IMAGE 2*/
+    model: "SUV",
+    price: 50,
+    seats: "4",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
@@ -25,15 +34,16 @@ const carData = [
       " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
   },
 
+/* THE REST OF THE FEED */
   {
     id: 2,
-    brand: "Toyota",
+    brand: "Mitsubishi",
     rating: 102,
-    carName: "Toyota Aventador",
-    imgUrl: img02,
-    model: "Model-2022",
+    carName: "Lancer",
+    imgUrl: mainImage,
+    model: "Sedan",
     price: 50,
-    speed: "20kmpl",
+    seats: "4",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
@@ -46,10 +56,10 @@ const carData = [
     brand: "BMW",
     rating: 132,
     carName: "BMW X3",
-    imgUrl: img03,
+    imgUrl: mainImage,
     model: "Model-2022",
     price: 65,
-    speed: "20kmpl",
+    seats: "4",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
@@ -58,14 +68,15 @@ const carData = [
   },
 
   {
-    id: 4,
+    id:4,
     brand: "Nissan",
-    rating: 102,
-    carName: "Nissan Mercielago",
-    imgUrl: img04,
-    model: "Model-2022",
-    price: 70,
-    speed: "20kmpl",
+    rating: 112,
+    carName: "Nissan Skyline GTR R34",
+    imgUrl: mainImage,/* images of current cars */
+    fuel:"Petrol",
+    model: "Coupe",
+    price: 50,
+    seats: "4",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
@@ -78,10 +89,10 @@ const carData = [
     brand: "Ferrari",
     rating: 94,
     carName: "Ferrari Camry",
-    imgUrl: img05,
+    imgUrl: mainImage,
     model: "Model-2022",
     price: 45,
-    speed: "20kmpl",
+    seats: "4",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
@@ -94,10 +105,10 @@ const carData = [
     brand: "Mercedes",
     rating: 119,
     carName: "Mercedes Benz XC90",
-    imgUrl: img06,
+    imgUrl:mainImage,
     model: "Model-2022",
     price: 85,
-    speed: "20kmpl",
+    seats: "4",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
@@ -110,10 +121,10 @@ const carData = [
     brand: "Audi",
     rating: 82,
     carName: "Audi Fiesta",
-    imgUrl: img07,
+    imgUrl: mainImage,
     model: "Model 3",
     price: 50,
-    speed: "20kmpl",
+    seats: "4",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
@@ -126,10 +137,25 @@ const carData = [
     brand: "Colorado",
     rating: 52,
     carName: "Rolls Royce Colorado",
-    imgUrl: img08,
+    imgUrl: mainImage,
     model: "Model 3",
     price: 50,
-    speed: "20kmpl",
+    seats: "4",
+    gps: "GPS Navigation",
+    seatType: "Heated seats",
+    automatic: "Automatic",
+    description:
+      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+  },
+  {
+    id: 9,
+    brand: "Tesla",
+    rating: 112,
+    carName: "Tesla Malibu",
+    imgUrl:mainImage,/* images of current cars */
+    model: "Model 3",
+    price: 50,
+    seats: "4",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",

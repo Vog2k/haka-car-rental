@@ -20,5 +20,6 @@ root.render(
 /*https://reactstrap.github.io/?path=/story/home-installation--page
   https://remixicon.com/
   https://github.com/Remix-Design/remixicon#usage
+  https://fonts.google.com/ FOR CUSTOM FONTS
 
   */ 
