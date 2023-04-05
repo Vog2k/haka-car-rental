@@ -1,9 +1,10 @@
 import React from 'react'
 import { Route, Routes, Navigate } from 'react-router-dom'
-import Home from '../pages/Home'
-import About from '../pages/About' 
+import Home from '../pages/home'
+import About from '../pages/about' 
 import CarList from '../pages/carList'
 import CarIformation from '../pages/carIformation'
+import Contact from '../pages/Contact'
 
 const Routers = () => {
   return <Routes>
@@ -12,6 +13,8 @@ const Routers = () => {
     <Route path='/CarList' element={<CarList />} />
     <Route path='/Car/:slug' element={<CarIformation />} />
     <Route path='/About' element={<About />} />
+    <Route path='/Contact' element={<Contact />} />
+    <Route path='/Sign&register' element={<About />} />
     
 
   </Routes>

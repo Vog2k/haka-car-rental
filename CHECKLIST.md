@@ -1,5 +1,10 @@
-Set all current images to suit the card.
 
-add all information for carInformation card that includes (fuel, seats,transmission).
+Task 9: Implements search engine optimization (SEO)
+
+Task 9: Implements accessibility features
+
+Task 9: Implements at least 6 interactive elements using JavaScript effectively
+
+
 
 

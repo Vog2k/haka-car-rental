@@ -37,11 +37,12 @@
   font-weight: 500;
   color: #ffffff;
   
+  
 }
 
 .bannerButton:hover {
-  background: #28306e;
-  color: #fff;
+  background: #000000;
+  color: #000000;
 }
 
 @media only screen and (max-width: 992px) {

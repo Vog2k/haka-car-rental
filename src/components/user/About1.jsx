@@ -1,9 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import "../../styles/About1.css";
+import Info from "./information";
 
 
-const About1 = ({ aboutClass }) => {
+
+const AboutInfo = ({ aboutClass }) => {
   return (
     <section
       className="aboutSection"
@@ -13,6 +15,8 @@ const About1 = ({ aboutClass }) => {
           : { marginTop: "280px" }
       }
     >
+
+    
       <Container>
         <Row>
           <Col lg="" md="">
@@ -54,11 +58,26 @@ const About1 = ({ aboutClass }) => {
             <div className="about__img">
 
             </div>
+            <section>
+        <Container>
+          <Row>
+            <Col lg="12" className="mb-4 text-center">
+              <h6 className="section__subtitle">More information</h6>
+              <h2 className="section__title">Need to know</h2>
+            </Col>
+              
+            <Info />
+
+          </Row>
+        </Container>
+      </section>
           </Col>
         </Row>
       </Container>
     </section>
+    
+    
   );
 };
 
-export default About1;
+export default AboutInfo;
