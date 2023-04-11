@@ -1,9 +1,37 @@
-import React from 'react'
+import React from "react";
+import { Container, Row, Col } from "reactstrap";
+import Header from "../components/Header/Header";
+import CarItem from "../components/user/CarInfo";
+import carData from "../assets/data/carData";
 
-const carList = () => {
+const CarList = () => {
   return (
-    <div>CarList</div>
-  )
-}
+    <Header title="Cars">
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12">
+              <div className=" d-flex align-items-center gap-3 mb-5">
+                <span className=" d-flex align-items-center gap-2">
+                  <i class="ri-sort-asc"></i> Sort By
+                </span>
 
-export default carList
+                <select>
+                  <option>Select</option>
+                  <option value="low">Low to High</option>
+                  <option value="high">High to Low</option>
+                </select>
+              </div>
+            </Col>
+
+            {carData.map((item) => (
+              <CarItem item={item} key={item.id} />
+            ))}
+          </Row>
+        </Container>
+      </section>
+    </Header>
+  );
+};
+
+export default CarList;

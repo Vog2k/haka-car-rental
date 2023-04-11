@@ -9,12 +9,12 @@ const CarSearch = () => {
 
 
         <FormGroup className="form1">
-          <h2>Pick up & drop off</h2>
+          <h2>Pick up date</h2>
           <input type="date" placeholder="Date" required />
         </FormGroup>
 
         <FormGroup className="form1">
-          <h2>Pick up time & drop off time</h2>
+          <h2>Pick up time</h2>
           <input
             className="estimatedTime"
             type="time"

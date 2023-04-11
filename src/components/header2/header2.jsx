@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header2 = (props) => {
 
-    document.title = 'Book A Car' + props.title;
+    document.title = 'Haka Rentals ' + props.title;
     return <div className='w-100' >{props.children}</div>;
 };
 

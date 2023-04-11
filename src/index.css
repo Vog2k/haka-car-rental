@@ -70,6 +70,7 @@
   background: #3044d8;
  }
 
+
  /* RESPONSIVE */
  @media only screen and (max-width: 768px) {
   section {
@@ -83,4 +84,8 @@
   .section2 {
     font-size: 1.1rem;
   }
+  /*NEEDS ATTENTION MAKE RESPONSIVENESS SINGLE FILE
+  .mainCarsAd1{
+    
+  }*/
 }

@@ -14,7 +14,7 @@ const Home = () => {
     <Header2 title="Home">
 
 
-      <section className='p-0 bannerSection'>
+      <section className='p-0 bannerSection'> 
         <Hero />
 
         <div className='mainForm'>

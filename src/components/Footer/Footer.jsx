@@ -96,10 +96,10 @@ const Footer = () => {
           </Col>
           {/* SET NAMES */}
           {/* MOVE TO THE RIGHT ADD "Privacy & Policy" + "Terms & Condition" */}
-          <Col lg="1" md="1" sm="10">
-            <div className="mb-42">
-              <h5 className="footer__link-title2">Newsletter</h5>
-              <p className="section__description2">©2022 HAKACARRENTALS. All rights reserved</p>
+          <Col row no-gutters>
+            <div className="col-12 col-sm-6 col-md-8">
+              <h5 className="footer__link-title">Privacy & Policy</h5>
+              <p className="section__description">Terms & Conditions</p>
             </div>
           </Col>
         </Row>
