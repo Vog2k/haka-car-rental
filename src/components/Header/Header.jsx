@@ -45,6 +45,10 @@ const Header = () => {
                             {/* NORMAL H1 TAG WITH IMPORTED FONT STYLE*/}
               <h1 className="logo">Haka car rentals</h1>
             
+              <div className="navigationS d-flex align-items-center justify-content-between">
+            <span className="mobileMenu">
+              <i class="ri-menu-line" onClick={toggleMenu}></i>
+            </span>
 
               <div className="navigation" ref={menuRef} onClick={toggleMenu}>
               <div className="menu">
@@ -63,18 +67,18 @@ const Header = () => {
             </div>
 
             <div className="navright">
-            <Col lg="6" md="6" sm="6">
+            <Col lg="8" md="8" sm="8">
               <div className="HeaderCorner">
     
-                {/* Set up links Account*/}
-                <Link to="/account" className=" HeaderCornerAccount">
-                <i class="ri-account-circle-fill"></i>
-                </Link>
+                      {/* Set up links Account*/}
+                    <Link to="/account" className=" HeaderCornerAccount">
+                  <i  class="ri-account-circle-fill"></i>
+                  </Link>
+                </div>
+              </Col>
               </div>
-            </Col>
             </div>
           </div>
-          
         </Container>
       </div>
     </header>

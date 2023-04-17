@@ -62,12 +62,14 @@ const Home = () => {
 
             </Row>
             
-          <button className=" w-25 carItem-btn carbtn-rent ">
+          <div className='move w-100 d-flex justify-content-center'>
+            <button className=" w-25 carItem-btn3  d-flex d-flex justify-content-center">
             <Link to= '/cars'>View more</Link>
-          </button>
-          {/*BUTTON*/}
+          </button></div>  {/*BUTTON*/}
         </Container>
+        
         </div>
+        
       {/*INFORMATIN SECTION NEEDS TO BE ADDED*/}
       <section>
         <Container>

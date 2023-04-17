@@ -77,11 +77,10 @@ const Footer = () => {
           {/* SET NAMES */}
           <Col lg="3" md="4" sm="6">
             <div className="mb-4">
-              <h5 className="footerLink mb-4">About</h5>
-              <p className="info">How it works</p>
-              <p className="info">Featured</p>
-              <p className="info">Partnership</p>
-              <p className="info">Business Relations</p>
+              <h5 className="footerLink mb-4">Events</h5>
+              <p className="info">Blog</p>
+              <p className="info">Podcast</p>
+              <p className="info">Invite a friend</p>
 
 
               <p className="info">Office Time: 10am - 7pm</p>

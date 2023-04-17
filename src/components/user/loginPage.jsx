@@ -25,7 +25,7 @@ const LoginPage = () => {
 
   return (
     <div>
-      <h2>Login Page</h2>
+      <h2 className="p-5">Login</h2>
       <form className="signIn" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="username">Username:</label>
@@ -42,8 +42,14 @@ const LoginPage = () => {
             type="password"
             id="password"
             value={password}
-            onChange={handlePasswordChange}
-          />
+            onChange={handlePasswordChange}/>
+          <section className="secc d-flex bd-highlight mb-1">
+          <label htmlfor="remember-me" className="remember-me">Remember Me:<input type="checkbox" className="checkbox"></input><br></br></label>
+
+
+
+          <label for="forgotPassword" className="forgotPassword">Forgot password?</label>
+          </section>
         </div><Link to= '/account'>
         <button type="submit">Login</button></Link>
       </form>

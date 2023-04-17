@@ -48,6 +48,7 @@
   outline: none;
   background: #3044d8;
   padding: 8px 0px;
+
   
 }
 
@@ -62,6 +63,33 @@
   color: #fff;
   
 }
+
+ 
+.carItem-btn3 {
+  border-radius: 0;
+  border: none;
+  outline: none;
+  background: #3044d8;
+  padding: 8px 0px;
+
+  
+}
+
+.carItem-btn3 a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+
+}
+
+.carItem-btn3 a:hover {
+  color: #fff;
+  
+}
+.move{
+  color: aqua;
+}
+
 
 .carbtn-rent {
   border-radius: 4px
