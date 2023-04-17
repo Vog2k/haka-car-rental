@@ -21,11 +21,11 @@ const navLinks = [
   },
   {
     path: "/contact",
-    display: "Contact Us",
+    display: "Contact us",
   },
 
   {
-    path: "/blogs",
+    path: "/login",
     display: "LogIn/Register",
   },
 
@@ -67,7 +67,7 @@ const Header = () => {
               <div className="HeaderCorner">
     
                 {/* Set up links Account*/}
-                <Link to="#" className=" HeaderCornerAccount">
+                <Link to="/account" className=" HeaderCornerAccount">
                 <i class="ri-account-circle-fill"></i>
                 </Link>
               </div>

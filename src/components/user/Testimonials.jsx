@@ -45,7 +45,7 @@ const Testimonial = () => {
   return (
     <Slider {...settings}>
       <div className="testimonial py-4 px-3">
-        <p className="section__description">
+        <p className="section3">
         "Haka Car Rentals exceeded my expectations in every way possible. 
         The booking process was simple, the car was clean and well-maintained, 
         and the staff were friendly and professional. I felt safe and comfortable driving the car, 
@@ -58,7 +58,7 @@ const Testimonial = () => {
 
           <div>
             <h6 className="mb-0 mt-3">Mark Worsop</h6>
-            <p className="section__description">Customer</p>
+            <p className="section3">Customer</p>
             
             <div className="group">
             <i class="bi bi-star-fill"></i>
@@ -72,7 +72,7 @@ const Testimonial = () => {
       </div>
 
       <div className="testimonial py-4 px-3">
-        <p className="section__description">
+        <p className="section3">
         "I was extremely impressed with the service I received 
         from Haka Car Rentals. The staff were knowledgeable and 
         helpful, and they went above and beyond to ensure that 
@@ -87,13 +87,13 @@ const Testimonial = () => {
 
           <div>
             <h6 className="mb-0 mt-3">Muhammad Azam</h6>
-            <p className="section__description">Customer</p>
+            <p className="section3">Customer</p>
           </div>
         </div>
       </div>
 
       <div className="testimonial py-4 px-3">
-        <p className="section__description">
+        <p className="section3">
         "I recently rented a car from Haka Car Rentals 
         for a weekend trip with friends. The car was comfortable 
         and reliable, and we had no issues during our journey. 
@@ -107,13 +107,13 @@ const Testimonial = () => {
 
           <div>
             <h6 className="mb-0 mt-3">Roman Mitch</h6>
-            <p className="section__description">Customer</p>
+            <p className="section3">Customer</p>
           </div>
         </div>
       </div>
 
       <div className="testimonial py-4 px-3">
-        <p className="section__description">
+        <p className="section3">
         "I had a fantastic experience with Haka Car Rentals! The booking 
         process was seamless and easy, and the car was in great condition 
         when I picked it up. The staff were friendly and helpful, 
@@ -126,7 +126,7 @@ const Testimonial = () => {
 
           <div>
             <h6 className="mb-0 mt-3">Shahbaz Pervez Chattha</h6>
-            <p className="section__description">Customer</p>
+            <p className="section3">Customer</p>
           </div>
         </div>
       </div>

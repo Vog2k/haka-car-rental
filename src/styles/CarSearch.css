@@ -1,13 +1,13 @@
 
-
 .form1 {
   width: 30%;
-  margin-bottom: 0;
-
+  margin: 10px;
+  padding: 10px;
+  
 }
 
 .form1 input {
-  border: 1.5px solid #b1b1b1;
+  border: 1.5px solid #dddddd;
   padding: 5px 10px;
   width: 100%;
   outline: none;
@@ -17,25 +17,32 @@
   color: #7c8a97;
 }
 
-.form {
+.form3 {
   background: #D9D9D9;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 80px;
   padding-left: 15px;
   padding-right: 15px;
-  border-radius: 35px 35px 0px 0px;
+  border-radius: 55px 55px 0px 0px;
+  margin: 0px;
+  
 }
-
+.To{
+  color: black;
+  padding: 50px 0px 0px 0px;
+}
 .form1 h2 {
-  font-size: 25px;
+  font-size: 20px;
   color: black;
 }
 
 
 .bannerSection {
   position: relative;
-  z-index: 10;
-  margin-bottom: 150px;
+  
+  
+  margin-bottom: 100px;
+  
 
   /*SPACE BETWEEN*/
 }
@@ -43,29 +50,40 @@
 .mainForm {
   position: absolute;
   bottom: -150px;
-  z-index: 11;
   width: 100%;
+  margin: 0px;
 
 }
 
 .formSection {
   background: transparent;
-  box-shadow: 5px 5px 15px -5px #7c8a97;
+
 }
 
 .estimatedTime::before {
-  content: "Enter a pick up time";
-  margin-right: 0.8rem;
+  margin-right: 30px;
   color: #7c8a97;
+  padding: 0px;
 }
-
+.firstName{
+  padding-right: 520px;
+}
+.lastName{
+  padding-right: 520px;
+}
+.emailAdd{
+  padding-right: 500px;
+}
+.phoneNumber{
+  padding-right: 500px;
+}
 .searchCarButton {
   background: #3563E9 !important;
   color: #fff !important;
-  padding: 8px 15px;
-  margin: 35px 0px 0px 20px;
+  padding: 0px 0px;
+  margin: 30px 0px 0px 80px;
   /*Position of the button*/
-  width: 90%;
+  width: 70%;
   border: none;
   outline: none;
 }
@@ -92,12 +110,34 @@
     width: 100%;
   
   }
+  .firstName{
+    padding-right: 420px;
+  }
+  .lastName{
+    padding-right: 420px;
+  }
+  .emailAdd{
+    padding-right: 400px;
+  }
+  .phoneNumber{
+    padding-right: 400px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
 
+  .form3 {
+    background: #D9D9D9;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 55px 55px 0px 0px;
+    margin: 0px;
+    
+  }
   .form {
-    padding: 30px 10px;
+    padding: 30px 0px;
   }
 
   .form1 h2 {
@@ -113,10 +153,41 @@
   .mainForm {
     bottom: -100px;
   }
+  .firstName{
+    padding-right: 270px;
+  }
+  .lastName{
+    padding-right: 270px;
+  }
+  .emailAdd{
+    padding-right: 250px;
+  }
+  .phoneNumber{
+    padding-right: 250px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
 
+    .form3 {
+    background: #D9D9D9;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 55px 55px 0px 0px;
+    margin: 0px;
+    
+  }
+  .bannerSection {
+    position: relative;
+    
+    
+    margin-bottom: 100px;
+    
+  
+    /*SPACE BETWEEN*/
+  }
   .form {
     padding: 20px 10px;
   }
@@ -125,12 +196,24 @@
     font-size: 10px;
     color: black;
   }
+  .firstName{
+    padding-right: 160px;
+  }
+  .lastName{
+    padding-right: 160px;
+  }
+  .emailAdd{
+    padding-right: 140px;
+  }
+  .phoneNumber{
+    padding-right: 140px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
   .form1 {
     width: 100%;
-    margin: auto;
+    margin: 0;
     margin-bottom: 15px;
   }
 
@@ -149,6 +232,18 @@
     width: 100%;
     margin: 0px;
     margin-bottom: 150px;
+  }
+  .firstName{
+    padding-right: 70px;
+  }
+  .lastName{
+    padding-right: 70px;
+  }
+  .emailAdd{
+    padding-right: 40px;
+  }
+  .phoneNumber{
+    padding-right: 40px;
   }
   
 }

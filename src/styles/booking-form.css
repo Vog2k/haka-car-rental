@@ -1,15 +1,15 @@
-.booking__form {
-  width: 47.5%;
+.bookingForm {
+  width: 80%;
 }
 
-.booking__form input {
+.bookingForm input {
   padding: 8px 15px;
   border: 1px solid #7c8a972a;
   color: #7c8a97;
   width: 100%;
 }
 
-.booking__form select,
+.bookingForm select,
 .textarea {
   width: 100%;
   padding: 10px 15px;
@@ -19,14 +19,14 @@
 }
 
 .time__picker::before {
-  content: "Journey Time";
+  content: "Estimated drop off time";
   color: #7c8a97;
   margin-right: 0.5rem;
 }
 
 .textarea:focus,
-.booking__form input:focus,
-.booking__form select:focus {
+.bookingForm input:focus,
+.bookingForm select:focus {
   outline: none;
 }
 

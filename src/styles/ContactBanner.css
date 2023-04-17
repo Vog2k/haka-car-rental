@@ -1,0 +1,30 @@
+.ContactBanner{
+  background: 
+    url("../assets/figmaImages/cars-img/img-1641873791-9380-27740-ezi-car-rental_14__aWxvdmVrZWxseQo_CropResizeWzk0MCw1MzAsNzUsInBuZyJd.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 269px 0px;
+}
+.titleContact{
+  color: white;
+  position: absolute; 
+  top: 550px; 
+  left: -30%; 
+  width: 100%; 
+  font-size: 60px;
+
+}
+@media only screen and (max-width: 768px) {
+  .titleContact{
+    color: white;
+    position: absolute; 
+    top: 470px; 
+    left: 0; 
+    width: 100%; 
+    font-size: 50px;
+  
+  }
+  
+
+}

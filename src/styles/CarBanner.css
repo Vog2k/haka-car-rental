@@ -1,0 +1,34 @@
+.CarBanner {
+  background:url("../assets/figmaImages/cars-img/banner\ for\ bookings.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 269px 0px;
+}
+.titleList{
+  color: white;
+  position: absolute; 
+  top: 550px; 
+  left: -30%; 
+  width: 100%; 
+  font-size: 60px;
+
+}
+@media only screen and (max-width: 768px) {
+  .titleList{
+    color: white;
+    position: absolute; 
+    top: 470px; 
+    left: 0; 
+    width: 100%; 
+    font-size: 50px;
+  
+  }
+  .CarBanner {
+    background:url("../assets/figmaImages/cars-img/banner\ for\ bookings.jpg");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+}

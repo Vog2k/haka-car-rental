@@ -11,13 +11,14 @@ const Info = () => {
   return (
     <Container>
       <Row>
+      <div className="d-flex flex-row">
         <Col>
-        <div className="col1">
-        <img 
-          src={img1} 
-          alt="logo" 
-        />
-          <h3>Prepear for anything</h3>
+
+        <div className="col1">        
+        <h3>Prepear for anything</h3>
+          <h6>Tips and tricks</h6>
+        <img src={img1} alt="Reciving car keys"/>
+
           <p>Rent a car or campervan: New Zealand has a lot of beautiful sights to see that are spread out, so having a car or campervan will give 
           you the flexibility to explore at your own pace.
           <br></br><br></br>
@@ -30,15 +31,15 @@ const Info = () => {
           Take advantage of free activities: New Zealand has plenty of free activities, including hiking, beachcombing, and visiting public parks.
           <br></br><br></br>
           Respect the environment: New Zealand is known for its stunning natural beauty, so be sure to respect the environment by not littering, staying on marked trails, and following Leave No Trace principles</p>
-          <button className="InfoButton">
-              <Link to="/cars">E­xplore Now</Link>
-            </button></div></Col>
+          <button className="InfoButton"><Link to="/cars">E­xplore Now</Link></button>
+              </div>
+            </Col>
         <Col>
-        <img 
-          src={img3} 
-          alt="logo" 
-        />
-          <h3>Popular tourist destinations</h3>
+        <div className="col1">
+        <h3>Popular destinations</h3>
+        <h6>Where to go?</h6>
+        <img src={img3} alt="Lander rover in a lavender feild" />
+
           <p>Milford Sound: Known as the "eighth wonder of the world," Milford Sound is a stunning fjord located in Fiordland National Park.
           <br></br><br></br>
             Mount Cook National Park: Home to New Zealand's highest mountain, Mount Cook National Park offers scenic hiking trails, glacier tours, and stargazing opportunities.
@@ -50,14 +51,14 @@ const Info = () => {
             Bay of Islands: Located in the North Island, the Bay of Islands is a popular destination for sailing, fishing, and dolphin watching.</p>
             <button className="InfoButton">
               <Link to="/cars">E­xplore Now</Link>
-            </button> </Col>
+            </button></div> </Col>
            
            <Col>
-        <img 
-          src={img2} 
-          alt="logo" 
-        />
+           <div className="col1">
           <h3>About New Zealand</h3>
+          <h6>Facts about NZ</h6>
+        <img src={img2} alt="Small toy car on a map" />
+
           <p>New Zealand is located in the southwestern Pacific Ocean, southeast of Australia.
             <br></br><br></br>
             New Zealand is comprised of two main islands, the North Island and the South Island, as well as many smaller islands.
@@ -76,8 +77,8 @@ const Info = () => {
             <button className="InfoButton">
               <Link to="/cars">E­xplore Now</Link>
             </button>
-        </Col>
-      </Row>
+        </div></Col>
+      </div></Row>
     </Container>
   );
 };

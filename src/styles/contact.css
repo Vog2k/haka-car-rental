@@ -1,23 +1,37 @@
-.social__link-icon {
-  text-decoration: none;
-
-  color: #000d6b;
-  font-weight: 500;
-  font-size: 1.2rem;
+.out{
+position: relative;
+padding: 50px 50px 50px 50px;
+background: #D9D9D9;
 }
 
-.contact__btn {
+.contactForm{
+  display: flex;
+  width: 100%;
+  max-width: 60%;
+  margin: 0 auto;
+  justify-content: center;
+
+}
+.contactForm2{
+  color: black;
+}
+.contactButton {
   padding: 7px 15px;
-  background: #000d6b;
+  background: #3563E9;
   color: #fff;
   border: none;
   outline: none;
   border-radius: 5px;
 }
+h6{
+  font-size: 20px;
+}
 
 @media only screen and (max-width: 768px) {
-  .contact__btn {
+  .contactButton {
     margin-bottom: 40px;
     font-size: 0.8rem;
+    
   }
+
 }

@@ -20,10 +20,11 @@ const AboutInfo = ({ aboutClass }) => {
       <Container>
         <Row>
           <Col lg="" md="">
-            <div className="about__section-content">
-              <h4 className="section__subtitle">About Us</h4>
-              <h2 className="section__title">Welcome to Haka car rentals !</h2>
-              <p className="section__description">
+            <div className="aboutContent">
+              
+              <h2 className="titleAbout">Welcome to Haka car rentals!</h2>
+              <h4 className="titleAbout1">About Our Whanau</h4>
+              <p className="informatinoPart">
               Welcome to Haka Rentals, a premier rental company providing reliable and 
               affordable transportation solutions to customers across New Zealand. Our 
               company is dedicated to delivering exceptional customer service and ensuring a 
@@ -55,15 +56,15 @@ const AboutInfo = ({ aboutClass }) => {
 
             </div>
 
-            <div className="about__img">
+            <div className="aboutImg">
 
             </div>
             <section>
         <Container>
           <Row>
             <Col lg="12" className="mb-4 text-center">
-              <h6 className="section__subtitle">More information</h6>
-              <h2 className="section__title">Need to know</h2>
+              <h6 className="titleAbout1">More information</h6>
+              <h2 className="titleAbout">Need to know</h2>
             </Col>
               
             <Info />

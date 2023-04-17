@@ -1,94 +1,66 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import { Container, Row, Col, Form, FormGroup, Input } from "reactstrap";
 import Header2 from "../components/header2/header2";
+import ContactBanner from "../components/user/ContactBanner";
 
 import "../styles/contact.css";
 
-const socialLinks = [
-  {
-    url: "#",
-    icon: "ri-facebook-line",
-  },
-  {
-    url: "#",
-    icon: "ri-instagram-line",
-  },
-  {
-    url: "#",
-    icon: "ri-linkedin-line",
-  },
-  {
-    url: "#",
-    icon: "ri-twitter-line",
-  },
-];
+
 
 const Contact = () => {
   return (
     <Header2 title="Contact">
-
+      <ContactBanner />
       <section>
-        <Container>
+        <Container className="text-center">
           <Row>
-            <Col lg="7" md="7">
-              <h6 className="fw-bold mb-4">Get In Touch</h6>
+            <Col>
+            <h5 className="fw-bold mb-4 text-center ">Contact form</h5>
+            <hr/>
+              <h6 className="fw-bold mb-4 text-center ">Give us a call or send a message!</h6>
+              <section className="out">
+              <Form >
+              <h6 className="firstName fw-bold">First name</h6>
 
-              <Form>
-                <FormGroup className="contact__form">
-                  <Input placeholder="Your Name" type="text" />
+                <FormGroup className="contactForm" >
+                  <Input placeholder="Enter Your First Name" type="text" />
+                  
                 </FormGroup>
-                <FormGroup className="contact__form">
-                  <Input placeholder="Email" type="email" />
+                <h6 className="lastName fw-bold ">Last name</h6>
+                <FormGroup className="contactForm">
+                  <Input placeholder="Enter Your Last Name" type="text" />
+                  
                 </FormGroup>
-                <FormGroup className="contact__form">
-                  <textarea
-                    rows="5"
-                    placeholder="Message"
-                    className="textarea"
+                <h6 className="emailAdd fw-bold ">Email address</h6>
+                <FormGroup className="contactForm">
+                  <Input placeholder="Enter Email Address" type="email" />
+                </FormGroup>
+                <h6 className="phoneNumber fw-bold ">Phone number</h6>
+                <FormGroup className="contactForm">
+                  <Input placeholder="Enter Your Phone" type="Phone" />
+                  
+                </FormGroup>
+                
+                <FormGroup className="contactForm">
+                  <textarea rows="10"placeholder="Send us a message" className="textarea"
                   ></textarea>
                 </FormGroup>
 
-                <button className=" contact__btn" type="submit">
-                  Send Message
-                </button>
-              </Form>
+                
+
+                <button className=" contactButton" type="submit">
+                  Send It
+                </button>     
+              </Form></section>
             </Col>
 
-            <Col lg="5" md="5">
-              <div className="contact__info">
-                <h6 className="fw-bold">Contact Information</h6>
-                <p className="section__description mb-0">
-                  
-                </p>
-                <div className=" d-flex align-items-center gap-2">
-                  <h6 className="fs-6 mb-0">Phone:</h6>
-                  <p className="section__description mb-0"></p>
-                </div>
+          
 
-                <div className=" d-flex align-items-center gap-2">
-                  <h6 className="mb-0 fs-6">Email:</h6>
-                  <p className="section__description mb-0"></p>
-                </div>
-
-                <h6 className="fw-bold mt-4">Follow Us</h6>
-
-                <div className=" d-flex align-items-center gap-4 mt-3">
-                  {socialLinks.map((item, index) => (
-                    <Link
-                      to={item.url}
-                      key={index}
-                      className="social__link-icon"
-                    >
-                      <i class={item.icon}></i>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </Col>
           </Row>
         </Container>
       </section>
+
     </Header2>
   );
 };

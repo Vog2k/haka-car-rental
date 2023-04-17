@@ -20,6 +20,7 @@
  h5{
   font-size: 20px;
  }
+
  a{
   text-decoration: none;
   color: unset;
@@ -36,12 +37,12 @@
  .section1{
   color: #3044d8;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
  }
  .section2{
-  color: blueviolet;
+  color:  #3044d8;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 30px;
 
  }
  .section3{
@@ -49,9 +50,14 @@
   font-size: 15px;
   line-height: 30px;
  }
+
  section{
   padding: 50px 0px ;
-  background: #e6e6e6;
+  background: #ffffff;
+ }
+ .sectionColor{
+  padding: 50px 0px ;
+  background: #DBDBDB;
  }
  /* BUTTONS  */
 

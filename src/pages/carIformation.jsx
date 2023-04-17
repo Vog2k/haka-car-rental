@@ -1,37 +1,77 @@
 import React, { useEffect } from "react";
 
 import carData from "../assets/data/carData";
-import { Container, Row, Col } from "reactstrap";
-import Header from "../components/Header/Header";
+import { Container, Row, Col, Form, FormGroup, Input, Label } from "reactstrap";
+import Header2 from "../components/header2/header2";
 import { useParams } from "react-router-dom";
-import BookingForm from "../components/user/BookingForm";
-import PaymentMethod from "../components/user/PaymentMethod";
+import Booking from "../components/user/BookingForm"
+import BookNow from "../components/user/bookIt";
+import CarBanner from "../components/user/CarBanner";
 
-const CarDetails = () => {
+
+const CarInformation = () => {
   const { slug } = useParams();
 
   const singleCarItem = carData.find((item) => item.carName === slug);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [singleCarItem]);
+  useEffect(() => {window.scrollTo(0, 0);}, [singleCarItem]);
 
   return (
-    <Header title={singleCarItem.carName}>
+    
+    
+    <Header2 title={singleCarItem.carName}>
+    <CarBanner />
       <section>
         <Container>
+
+        
           <Row>
-            <Col lg="6">
-              <img src={singleCarItem.imgUrl} alt="" className="w-100" />
+          <Col xs="6">
+              <div className="booking-info mt-5">
+                <h4 className="mb-4 fw-bold ">Billing Information</h4>
+                <h5>Please enter your billing info</h5>
+                <Booking />
+                
+              </div>
+              <Form>
+                <FormGroup
+                  check
+                  inline
+                >
+                  <Input type="checkbox" />
+                  <Label check>
+                  I agree with sending an Marketing and newsletter emails. No spam, promissed!
+                  </Label>
+                </FormGroup>
+                <FormGroup
+                  check
+                  inline>
+                  <Input type="checkbox" />
+                  <Label check>
+                  I agree with our terms and conditions and privacy policy.
+                  </Label>
+                </FormGroup>
+              </Form>
+              <Col lg="10" className="mt-5">
+              <div className="payment__info mt-1">
+                <h5 className="mb-4 fw-bold ">Payment 
+                Confirmation</h5>
+                <h6 className="rentPrice fw-bold fs-10">
+                    ${singleCarItem.price}.00 NZD / Day
+                  </h6>
+                  
+
+              </div>
+            </Col>
             </Col>
 
             <Col lg="6">
-              <div className="car__info">
-                <h2 className="section__title">{singleCarItem.carName}</h2>
+              <div className="carInfo">
+                <h5 className="section1">{singleCarItem.carName}</h5>
 
                 <div className=" d-flex align-items-center gap-5 mb-4 mt-3">
-                  <h6 className="rent__price fw-bold fs-4">
-                    ${singleCarItem.price}.00 / Day
+                  <h6 className="rentPrice fw-bold fs-4">
+                    ${singleCarItem.price}.00 NZD / Day
                   </h6>
 
                   <span className=" d-flex align-items-center gap-2">
@@ -46,7 +86,7 @@ const CarDetails = () => {
                   </span>
                 </div>
 
-                <p className="section__description">
+                <p className="section3">
                   {singleCarItem.description}
                 </p>
 
@@ -54,7 +94,7 @@ const CarDetails = () => {
                   className=" d-flex align-items-center mt-3"
                   style={{ columnGap: "4rem" }}
                 >
-                  <span className=" d-flex align-items-center gap-1 section__description">
+                  <span className=" d-flex align-items-center gap-1 section3">
                     <i
                       class="ri-roadster-line"
                       style={{ color: "#f9a826" }}
@@ -62,7 +102,7 @@ const CarDetails = () => {
                     {singleCarItem.model}
                   </span>
 
-                  <span className=" d-flex align-items-center gap-1 section__description">
+                  <span className=" d-flex align-items-center gap-1 section3">
                     <i
                       class="ri-settings-2-line"
                       style={{ color: "#f9a826" }}
@@ -70,7 +110,7 @@ const CarDetails = () => {
                     {singleCarItem.automatic}
                   </span>
 
-                  <span className=" d-flex align-items-center gap-1 section__description">
+                  <span className=" d-flex align-items-center gap-1 section3">
                     <i
                       class="ri-timer-flash-line"
                       style={{ color: "#f9a826" }}
@@ -83,12 +123,12 @@ const CarDetails = () => {
                   className=" d-flex align-items-center mt-3"
                   style={{ columnGap: "2.8rem" }}
                 >
-                  <span className=" d-flex align-items-center gap-1 section__description">
+                  <span className=" d-flex align-items-center gap-1 section3">
                     <i class="ri-map-pin-line" style={{ color: "#f9a826" }}></i>{" "}
                     {singleCarItem.gps}
                   </span>
 
-                  <span className=" d-flex align-items-center gap-1 section__description">
+                  <span className=" d-flex align-items-center gap-1 section3">
                     <i
                       class="ri-wheelchair-line"
                       style={{ color: "#f9a826" }}
@@ -96,7 +136,7 @@ const CarDetails = () => {
                     {singleCarItem.seatType}
                   </span>
 
-                  <span className=" d-flex align-items-center gap-1 section__description">
+                  <span className=" d-flex align-items-center gap-1 section3">
                     <i
                       class="ri-building-2-line"
                       style={{ color: "#f9a826" }}
@@ -105,26 +145,23 @@ const CarDetails = () => {
                   </span>
                 </div>
               </div>
-            </Col>
+              <img src={singleCarItem.imgUrl} alt="" className="w-100 p-1" />
+              <img src={singleCarItem.imgUrl2} alt="" className="w-50 p-1" />
+              <img src={singleCarItem.imgUrl3} alt="" className="w-50 p-1" />            
+              </Col>
 
-            <Col lg="7" className="mt-5">
-              <div className="booking-info mt-5">
-                <h5 className="mb-4 fw-bold ">Booking Information</h5>
-                <BookingForm />
-              </div>
-            </Col>
+              
+           
+              <BookNow />
 
-            <Col lg="5" className="mt-5">
-              <div className="payment__info mt-5">
-                <h5 className="mb-4 fw-bold ">Payment Information</h5>
-                <PaymentMethod />
-              </div>
-            </Col>
+
+
+
           </Row>
         </Container>
       </section>
-    </Header>
+    </Header2>
   );
 };
 
-export default CarDetails;
+export default CarInformation;

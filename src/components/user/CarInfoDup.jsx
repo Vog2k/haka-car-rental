@@ -2,46 +2,55 @@ import React from "react";
 import { Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import "../../styles/CarInfo.css";
+import {Badge} from "reactstrap";
 
 const CarInfoDup = (props) => {
-  const { imgUrl, model, carName, automatic, seats,fuel, price } = props.item;
+  const { imgUrl, model, carName, automatic, seats,fuel, price, priceOff } = props.item;
 
   return (
 
-    <Col lg="4" md="4" sm="6" className="mb-5">
-      <div className="car__item1">
-      <h4 className="section__title1">{carName}</h4>
-      <h5 className="section__title1">{model}</h5>
-        <div className="carImage1">
+    <Col lg="5" md="5" sm="5" xs="5" className="d-flex flex-column bd-highlight mb-1">
+
+
+        <div className="car-Image ">
           <img src={imgUrl} alt="" className="w-100" />
+        </div>  
+
+        <div className="carItem1 ">      
+        <div className="carItem-info1 ">
+        <h4 className="section">{carName}</h4>
+        <h6 className="section3">{model}</h6>
+        
         </div>
 
-        <div className="car__item-content1 mt-4">
-
-
-
-          <div className="car__item-info1 d-flex align-items-center justify-content-between mt-3 mb-4">
-            <span className=" d-flex align-items-center gap-1">
+        <div className="carItem-info d-flex align-items-center justify-content-between mt-3 mb-4">
+            <Badge color="primary">New</Badge><span className=" d-flex align-items-center gap-1">
               <i class="ri-car-line"></i> {fuel}
             </span>
             <span className=" d-flex align-items-center gap-1">
               <i class="ri-settings-2-line"></i> {automatic}
             </span>
             <span className=" d-flex align-items-center gap-1">
-              <i class="ri-timer-flash-line"></i> {seats}
+              <i class="ri-team-fill"></i> {seats}
             </span>
           </div>
-          <h6 className="rent__price text-center1 mt-">
-            ${price}.00 <span>/ Day</span>
-          </h6>
-          <button className=" w-100 car__item-btn1 car__btn-rent1">
+        <div className="d-flex bd-highlight">
+          <h6 className="rentPrice p-2 flex-fill bd-highlight">
+           <span style={{textDecoration: 'line-through'}}> ${price}.00 NZD 
+        </span>{' '} <span>/Per Day</span></h6>
+          
+          <h6 className="rentPrice p-2 flex-fill bd-highlight">
+            ${priceOff}.00 NZD <span>/Per Day</span></h6>
+            
+          </div>
+          <button className=" w-100 carItem-btn1  carbtn-rent1">
             <Link to={`/cars/${carName}`}>Rent</Link>
           </button>
 
+</div>
 
 
-        </div>
-      </div>
+ 
     </Col>
 
     

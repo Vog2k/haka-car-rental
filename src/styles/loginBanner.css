@@ -1,26 +1,26 @@
-.ABanner  {
-    background:url("../assets/figmaImages/cars-img/about.jpg");
+.LBanner  {
+    background:url("../assets/figmaImages/cars-img/r35\ 1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 269px 0px;
   }
-.textAbout{
+.textLog{
   color: white;
   position: absolute; 
   top: 550px; 
   left: -30%; 
   width: 100%; 
-  font-size: 60px;
+  font-size: 50px;
 }
 @media only screen and (max-width: 768px) {
-  .textAbout{
+  .textLog{
     color: white;
     position: absolute; 
     top: 470px; 
     left: 0; 
     width: 100%; 
-    font-size: 50px;
+    font-size: 30px;
   
   
   }

@@ -5,7 +5,7 @@ import AboutInfo from "../components/user/About1"
 import Header2 from '../components/header2/header2';
 import AboutBanner from '../components/user/AboutBanner';
 
-import img from "../assets/figmaImages/cars-img/1935006930.jpg";
+import img from "../assets/figmaImages/cars-img/pexels-antoni-shkraba-7144172.jpg";
 
 const about = () => {
   return (
@@ -13,35 +13,33 @@ const about = () => {
       <AboutBanner title="About Us" />
       <AboutInfo aboutClass="aboutPage" />
 
-      <section className="about__page-section">
+      <section className="about1">
         <Container>
           <Row>
             <Col lg="6" md="6" sm="12">
-              <div className="about__page-img">
+              <div className="aboutImg">
                 <img src={img} alt="" className="w-100 rounded-3" />
               </div>
             </Col>
 
             <Col lg="6" md="6" sm="12">
-              <div className="about__page-content">
-                <h2 className="section__title">
-                  We Are Committed To Provide Safe Ride Solutions
+              <div className="aboutContent">
+                <h2 className="titleAbout">We Are Committed To Provide Safe Ride Solutions
                 </h2>
-
-                <p className="section__description">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Eveniet veniam assumenda aperiam accusantium ex autem
-                  perferendis repellendus nostrum delectus. Nemo et dolore est
-                  tempore rem minima adipisci magni dolorum ipsam.
+                <p className="informatinoPart">
+                At Haka Car Rentals, we understand that renting a car can be stressful, especially if you're in a new place. That's why we believe it's important to help our customers with everything along the way, from booking to returning the car.
                 </p>
 
-                <p className="section__description">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Eveniet veniam assumenda aperiam accusantium ex autem
-                  perferendis repellendus nostrum delectus. Nemo et dolore est
-                  tempore rem minima adipisci magni dolorum ipsam.
+                <p className="informatinoPart">
+                We offer a variety of car rental options to fit your needs, whether you're traveling for business or pleasure. Our knowledgeable staff is here to answer any questions you may have about the rental process, and can provide recommendations for local attractions or restaurants.
                 </p>
 
+                <p className="informatinoPart">
+                We also offer flexible pick-up and drop-off options to make your rental experience as convenient as possible. Whether you need a car at the airport or at your hotel, we've got you covered.
+
+                At Haka Car Rentals, we want to make your car rental experience easy and stress-free. Let us help you get where you need to go.
+                </p>
+              
               </div>
             </Col>
           </Row>

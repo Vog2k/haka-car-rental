@@ -4,93 +4,70 @@
   padding-bottom: 15px;
 }
 
-.footer__logo i {
-  color: #000d6b;
-  font-weight: 400;
-}
-
-.footer__logo span {
-  color: #000d6b;
+.footerBlerb i {
+  color:  #3563E9;
   font-weight: 500;
 }
 
-.footer__logo-content {
-  color: rgba(255, 255, 255, 0.715);
+.footerBlerb span {
+  color: #3563E9;
+  font-weight: 500;
+}
+
+.footerBlerb {
+  color: rgba(7, 7, 7, 0.715);
   margin-top: 15px;
   line-height: 30px;
 }
 
-.quick__link {
+.link {
   border: none !important;
   background: transparent !important;
 }
 
-.quick__link a {
+.link a {
   color: rgba(0, 0, 0, 0.715);
   text-decoration: none;
   font-weight: 300;
   transition: 0.3s;
 }
 
-.quick__link a:hover {
+.link a:hover {
   color: #000d6b;
 }
 
-.footer__link-title {
+.footerLink {
   color: #000000;
 }
-.footer__link-title2 {
+.footerLink2 {
   color: #000000;
 }
 
-.office__info {
+.info {
   color: rgba(0, 0, 0, 0.715);
   font-weight: 300;
 }
 
-.newsletter {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 12px;
-  border: 1px solid #7c8a972f;
-  border-radius: 50px;
-  background: #020a4de9;
-}
 
-.newsletter input {
-  background: transparent;
-  color: #000000;
-  border: none;
-  outline: none;
-}
-
-.newsletter span i {
-  color: #000000;
-}
 
 .footer__bottom {
   border-top: 1px solid #0000002f;
 }
 
 @media only screen and (max-width: 768px) {
-  .footer__logo-content {
+  .footerBlerb {
     font-size: 0.8rem;
   }
 
-  .quick__link,
-  .office__info {
+  .link,
+  .info {
     font-size: 0.8rem;
     line-height: 1.5rem;
   }
 
-  .footer__link-title {
+  .footerLink {
     font-size: 1rem;
     margin-top: 15px;
-  }
-
-  .footer__bottom p {
-    font-size: 0.7rem;
   }
 
   

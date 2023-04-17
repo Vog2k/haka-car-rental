@@ -1,60 +1,53 @@
 import React from "react";
 import "../../styles/booking-form.css";
-import { Form, FormGroup } from "reactstrap";
+import { Form, FormGroup, Alert } from "reactstrap";
 
-const BookingForm = () => {
+const Booking = () => {
   const submitHandler = (event) => {
     event.preventDefault();
   };
   return (
     <Form onSubmit={submitHandler}>
-      <FormGroup className="booking__form d-inline-block me-4 mb-4">
+
+    <h6>First Name</h6>
+      <FormGroup className="bookingForm d-inline-block me-4 mb-4">
         <input type="text" placeholder="First Name" />
       </FormGroup>
-      <FormGroup className="booking__form d-inline-block ms-1 mb-4">
+      <h6>Last Name</h6>
+      <FormGroup className="bookingForm d-inline-block ms-1 mb-4">
         <input type="text" placeholder="Last Name" />
       </FormGroup>
-
-      <FormGroup className="booking__form d-inline-block me-4 mb-4">
+      <h6>Email Address</h6>
+      <FormGroup className="bookingForm d-inline-block me-4 mb-4">
         <input type="email" placeholder="Email" />
       </FormGroup>
-      <FormGroup className="booking__form d-inline-block ms-1 mb-4">
+      <h6>Phone</h6>
+      <FormGroup className="bookingForm d-inline-block ms-1 mb-4">
         <input type="number" placeholder="Phone Number" />
       </FormGroup>
+      <h6>Pick up</h6>
+      <Alert>
+    Auckland, Avondale{' '}
+    <a
+      className="alert-link"
+      href="https://goo.gl/maps/mRQBGCo6Ry2StxW68"
+      rel="noreferrer"
+      target="_blank"
+    >
+      Timothy place.
+    </a>
+    . Give it a click if you like.
+  </Alert>
 
-      <FormGroup className="booking__form d-inline-block me-4 mb-4">
-        <input type="text" placeholder="From Address" />
-      </FormGroup>
-      <FormGroup className="booking__form d-inline-block ms-1 mb-4">
-        <input type="text" placeholder="To Address" />
-      </FormGroup>
 
-      <FormGroup className="booking__form d-inline-block me-4 mb-4">
-        <select name="" id="">
-          <option value="1 person">1 Person</option>
-          <option value="2 person">2 Person</option>
-          <option value="3 person">3 Person</option>
-          <option value="4 person">4 Person</option>
-          <option value="5+ person">5+ Person</option>
-        </select>
-      </FormGroup>
-      <FormGroup className="booking__form d-inline-block ms-1 mb-4">
-        <select name="" id="">
-          <option value="1 luggage">1 luggage</option>
-          <option value="2 luggage">2 luggage</option>
-          <option value="3 luggage">3 luggage</option>
-          <option value="4 luggage">4 luggage</option>
-          <option value="5+ luggage">5+ luggage</option>
-        </select>
-      </FormGroup>
-
-      <FormGroup className="booking__form d-inline-block me-4 mb-4">
+      <h6>Drop off</h6>
+      <FormGroup className="bookingForm d-inline-block me-4 mb-4">
         <input type="date" placeholder="Journey Date" />
       </FormGroup>
-      <FormGroup className="booking__form d-inline-block ms-1 mb-4">
+      <FormGroup className="bookingForm d-inline-block ms-1 mb-4">
         <input
           type="time"
-          placeholder="Journey Time"
+          placeholder="Estimated drop off time"
           className="time__picker"
         />
       </FormGroup>
@@ -71,4 +64,4 @@ const BookingForm = () => {
   );
 };
 
-export default BookingForm;
+export default Booking;

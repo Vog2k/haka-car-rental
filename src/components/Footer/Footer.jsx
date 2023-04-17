@@ -24,7 +24,7 @@ const Links = [
   },
 
   {
-    path: "/blogs",
+    path: "/login",
     display: "LogIn/Register",
   },
 ];
@@ -35,27 +35,27 @@ const Footer = () => {
       <Container>
         <Row>
           <Col lg="4" md="4" sm="12">
-            <div className="logo footer__logo">
+            <div className="logo footerBlerb">
               <h1>
                 <Link to="/home" className=" d-flex align-items-center gap-2">
 
                   <span>
-                    Haka Car Rentals <br />
+                    Haka Car Rentals
                   </span>
                 </Link>
               </h1>
             </div>
-            <p className="footer__logo-content">
-              Our vision is to provide convenience and help increase your sales business.
+            <p className="footerBlerb">
+              Support your local business.
             </p>
           </Col>
           {/* SET NAMES */}
           <Col lg="2" md="4" sm="6">
             <div className="mb-4">
-              <h5 className="footer__link-title">Main links</h5>
+              <h5 className="footerLink">Main links</h5>
               <ListGroup>
                 {Links.map((item, index) => (
-                  <ListGroupItem key={index} className="p-0 mt-3 quick__link">
+                  <ListGroupItem key={index} className="p-0 mt-3 link">
                     <Link to={item.path}>{item.display}</Link>
                   </ListGroupItem>
                 ))}
@@ -65,32 +65,32 @@ const Footer = () => {
           {/* SET NAMES */}
           <Col lg="3" md="4" sm="6">
             <div className="mb-4">
-              <h5 className="footer__link-title mb-4">About</h5>
-              <p className="office__info">How it works</p>
-              <p className="office__info">Featured</p>
-              <p className="office__info">Partnership</p>
-              <p className="office__info">Business Relations</p>
-              <p className="office__info">Office Time: 24Hr
+              <h5 className="footerLink mb-4">About</h5>
+              <p className="info">How it works</p>
+              <p className="info">Featured</p>
+              <p className="info">Partnership</p>
+              <p className="info">Business Relations</p>
+              <p className="info">Office Time: 24Hr
                 Past middnight will have reduced staff</p>
             </div>
           </Col>
           {/* SET NAMES */}
           <Col lg="3" md="4" sm="6">
             <div className="mb-4">
-              <h5 className="footer__link-title mb-4">About</h5>
-              <p className="office__info">How it works</p>
-              <p className="office__info">Featured</p>
-              <p className="office__info">Partnership</p>
-              <p className="office__info">Business Relations</p>
+              <h5 className="footerLink mb-4">About</h5>
+              <p className="info">How it works</p>
+              <p className="info">Featured</p>
+              <p className="info">Partnership</p>
+              <p className="info">Business Relations</p>
 
 
-              <p className="office__info">Office Time: 10am - 7pm</p>
+              <p className="info">Office Time: 10am - 7pm</p>
             </div>
           </Col>
           {/* SET NAMES */}
           <Col lg="4" md="4" sm="12">
             <div className="mb-4">
-              <h5 className="footer__link-title">Newsletter</h5>
+              <h5 className="footerLink">Newsletter</h5>
               <p className="section__description">©2022 HAKACARRENTALS. All rights reserved</p>
             </div>
           </Col>
@@ -98,8 +98,8 @@ const Footer = () => {
           {/* MOVE TO THE RIGHT ADD "Privacy & Policy" + "Terms & Condition" */}
           <Col row no-gutters>
             <div className="col-12 col-sm-6 col-md-8">
-              <h5 className="footer__link-title">Privacy & Policy</h5>
-              <p className="section__description">Terms & Conditions</p>
+              <h5 className="footerLink">Privacy & Policy</h5>
+              <p className="description">Terms & Conditions</p>
             </div>
           </Col>
         </Row>
